@@ -25,7 +25,7 @@ const connect = () => {
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || "http://localhost:3000", // Use environment variable for production
+  origin: process.env.FRONTEND_URL || "https://connectly-front-end.vercel.app", // Use environment variable for production
   methods: ["GET", "POST", "DELETE", "PUT"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
